@@ -1,7 +1,7 @@
 # STEPToPoints
 
 ## Description
-The program STEPToPoints is a command line utility to generate point clouds out of solids contained in STEP files. The supported output file formats is xyz (vertex positions and normal vectors). A popular viewer for the supported file format is MeshLab (https://www.meshlab.net). STEPToPoints is based on OpenCASCADE (https://www.opencascade.com). The program uses cxxops (https://github.com/jarro2783/cxxopts) for parsing the command line.
+The program STEPToPoints is a command line utility to generate point clouds out of solids contained in STEP files. The supported output file format is xyz (vertex positions and normal vectors). A popular viewer for the supported file format is MeshLab (https://www.meshlab.net). STEPToPoints is based on OpenCASCADE (https://www.opencascade.com). The program uses cxxops (https://github.com/jarro2783/cxxopts) for parsing the command line.
 
 ## Requirements
  * CMake installation (https://cmake.org)
