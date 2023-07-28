@@ -55,8 +55,7 @@ endif()
 
 set(CMAKE_PREFIX_PATH "${OPENCASCADE_PREFIX};${CMAKE_PREFIX_PATH}")
 
-find_package(OpenCASCADE)
-find_package(OCE)
+find_package(OpenCASCADE REQUIRED)
 
 if(OpenCASCADE_WITH_TBB)
 	set(TBB_LIBRARY_PREFIX "${OPENCASCADE_PREFIX}/tbb_2017.0.100/lib/intel64/vc14" CACHE PATH "TBB library directory")
@@ -78,7 +77,7 @@ if(OpenCASCADE_WITH_FREETYPE)
 	option(FREETYPE_SHARED "link FreeType as shared library" ON)
 endif()
 
-include_directories(${OpenCASCADE_INCLUDE_DIR} ${OCE_INCLUDE_DIRS})
+include_directories(${OpenCASCADE_INCLUDE_DIR})
 
 # OpenCASCADE-config.cmake doesn't define this option yet, so define it here instead
 option(OpenCASCADE_WITH_OPENVR "whether OpenCASCADE was built with OpenVR support" ON)
